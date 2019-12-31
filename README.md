@@ -1,5 +1,10 @@
 # Chatie
 
+[![Build Status](https://travis-ci.com/chatie/github-app-chatie.svg?branch=master)](https://travis-ci.com/chatie/github-app-chatie)
+[![Greenkeeper badge](https://badges.greenkeeper.io/chatie/github-app-chatie.svg)](https://greenkeeper.io/)
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 > A GitHub App built with [Probot](https://github.com/probot/probot) that A Probot app
 
 ## Setup
