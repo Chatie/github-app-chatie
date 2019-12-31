@@ -102,3 +102,13 @@ dist
 
 # TernJS port file
 .tern-port
+
+*.pem
+!mock-cert.pem
+.env
+package-lock.json
+coverage
+lib
+
+t.*
+t/
