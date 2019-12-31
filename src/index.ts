@@ -4,7 +4,7 @@ import {
 }               from 'probot/lib/application'
 import Webhooks from '@octokit/webhooks'
 
-import FileBox from 'file-box'
+// import FileBox from 'file-box'
 
 let n = 0
 
