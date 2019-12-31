@@ -75,7 +75,7 @@ const commentIssue: OnCallback<Webhooks.WebhookPayloadIssueComment> = async (con
 }
 
 async function callWebhook (url: string) {
-  const result = (await FileBox.fromUrl(url).toBuffer()).toString()
+  // const result = (await FileBox.fromUrl(url).toBuffer()).toString()
   console.info('url:', url)
   console.info('result:', result)
 }
