@@ -1,7 +1,7 @@
 import { Application } from 'probot' // eslint-disable-line no-unused-vars
 import {
-  OnCallback
-} from 'probot/lib/application'
+  OnCallback,
+}               from 'probot/lib/application'
 import Webhooks from '@octokit/webhooks'
 
 import FileBox from 'file-box'
@@ -29,13 +29,13 @@ const commentIssue: OnCallback<Webhooks.WebhookPayloadIssueComment> = async (con
 
   const webhook = [
     'https://oss-bot.kaiyuanshe.cn/webhook/',
-      [
-        `url=${encodeURIComponent(url)}`,
-        `description=${encodeURIComponent(description)}`,
-        `thumbnailUrl=${encodeURIComponent(thumbnailUrl)}`,
-        `title=${encodeURIComponent(title)}`,
-      ].join('&'),
-    ].join('?')
+    [
+      `url=${encodeURIComponent(url)}`,
+      `description=${encodeURIComponent(description)}`,
+      `thumbnailUrl=${encodeURIComponent(thumbnailUrl)}`,
+      `title=${encodeURIComponent(title)}`,
+    ].join('&'),
+  ].join('?')
 
   const result = (await FileBox.fromUrl(webhook).toBuffer()).toString()
   console.info('url:', webhook)

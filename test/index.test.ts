@@ -46,6 +46,10 @@ describe('My Probot app', () => {
 
     // Receive a webhook event
     await probot.receive({ name: 'issues', payload })
+
+    //TODO(huan): fix me
+    done()
+
   })
 
   afterEach(() => {
