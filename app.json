@@ -19,15 +19,15 @@
       "required": true
     },
     "APP_ID": {
-      "description": "App ID",
+      "description": "the ID of the app, which you can get from the app settings page https://github.com/settings/apps",
       "required": true
     },
     "PRIVATE_KEY": {
-      "description": "Private Key",
+      "description": "the contents of the private key you downloaded after creating the app.",
       "required": true
     },
     "WEBHOOK_SECRET": {
-      "description": "Webhook Secret",
+      "description": "the Webhook Secret that you generated when you created the app.",
       "required": true
     }
   },
