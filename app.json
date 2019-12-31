@@ -1,0 +1,42 @@
+{
+  "name": "github-app-chatie",
+  "description": "Chatie Bot",
+  "repository": "https://github.com/chatie/github-app-chatie",
+  "logo": "https://wechaty.github.io/wechaty/images/wechaty-icon.png",
+  "keywords": [
+    "chatie",
+    "heroku",
+    "deploy",
+    "button",
+    "github",
+    "github app"
+  ],
+  "website": "https://github.com/chatie/github-app-chatie",
+  "success_url": "/",
+  "env": {
+    "WEBHOOK_PROXY_URL": {
+      "description": "Webhook Proxy URL",
+      "required": true
+    },
+    "APP_ID": {
+      "description": "App ID",
+      "required": true
+    },
+    "PRIVATE_KEY": {
+      "description": "Private Key",
+      "required": true
+    },
+    "WEBHOOK_SECRET": {
+      "description": "Webhook Secret",
+      "required": true
+    }
+  },
+  "engines": {
+    "node": "10"
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
