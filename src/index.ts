@@ -10,7 +10,8 @@ let n = 0
 
 const commentIssue: OnCallback<Webhooks.WebhookPayloadIssueComment> = async (context) => {
   // const issue = context .issue()
-  const repoName = context.payload.repository.name
+  console.info(context.payload.repository)
+  const fullName = context.payload.repository.full_name
   const issueNumber = context.payload.issue.number
   const issueTitle = context.payload.issue.title
   const commentBody = context.payload.comment.body
@@ -18,8 +19,8 @@ const commentIssue: OnCallback<Webhooks.WebhookPayloadIssueComment> = async (con
   const avatarUrl = context.payload.comment.user.avatar_url
 
   const title = [
-    repoName,
-    issueNumber,
+    fullName,
+    `#${issueNumber}`,
     issueTitle.slice(0, Math.max(issueTitle.length, 30)),
   ].join(' ')
   const url = htmlUrl
