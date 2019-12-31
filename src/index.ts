@@ -29,10 +29,10 @@ const commentIssue: OnCallback<Webhooks.WebhookPayloadIssueComment> = async (con
   const webhook = [
     'https://oss-bot.kaiyuanshe.cn/webhook/',
       [
-        `url=${encodeURI(url)}`,
-        `description=${encodeURI(description)}`,
-        `thumbnailUrl=${encodeURI(thumbnailUrl)}`,
-        `title=${encodeURI(title)}`,
+        `url=${encodeURIComponent(url)}`,
+        `description=${encodeURIComponent(description)}`,
+        `thumbnailUrl=${encodeURIComponent(thumbnailUrl)}`,
+        `title=${encodeURIComponent(title)}`,
       ].join('&'),
     ].join('?')
 
