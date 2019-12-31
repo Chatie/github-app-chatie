@@ -26,6 +26,10 @@ If you have suggestions for how Chatie could be improved, or want to report a bu
 
 For more, check out the [Contributing Guide](CONTRIBUTING.md).
 
+## Resources
+
+- [PROBOT - GitHub Apps to automate and improve your workflow Use pre-built apps to extend GitHub, and easily build and share your own.](https://probot.github.io/)
+
 ## History
 
 ### master
@@ -33,6 +37,8 @@ For more, check out the [Contributing Guide](CONTRIBUTING.md).
 ### v0.0.1 Dec 31, 2019
 
 1. Init from Probot: [Getting Started - Developing an app](https://probot.github.io/docs/development/)
+1. Deployed to Heroku at <https://github.chatie.io>
+1. Published Github App at <https://github.com/apps/chatie/>
 
 ## Author
 
