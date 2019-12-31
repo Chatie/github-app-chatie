@@ -2,6 +2,8 @@
   "action": "opened",
   "issue": {
     "number": 1,
+    "title": "test title",
+    "body": "test body",
     "user": {
       "login": "hiimbex"
     }

@@ -44,6 +44,10 @@ describe('My Probot app', () => {
       })
       .reply(200)
 
+    nock('https://oss-bot.kaiyuanshe.cn')
+      .get(/.*/)
+      .reply(200)
+
     // Receive a webhook event
     await probot.receive({ name: 'issues', payload })
 
