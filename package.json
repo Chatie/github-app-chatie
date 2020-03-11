@@ -24,7 +24,7 @@
     "test:watch": "jest --watch --notify --notifyMode=change --coverage"
   },
   "dependencies": {
-    "@chatie/eslint-config": "^0.8.1",
+    "@chatie/eslint-config": "^0.9.1",
     "@chatie/git-scripts": "^0.2.5",
     "file-box": "^0.12.1",
     "probot": "^9.5.3"
