@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "@chatie/eslint-config": "^0.8.1",
-    "@chatie/git-scripts": "^0.2.5",
+    "@chatie/git-scripts": "^0.5.1",
     "file-box": "^0.12.1",
     "probot": "^9.5.3"
   },
